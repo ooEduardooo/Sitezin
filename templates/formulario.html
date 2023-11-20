@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Rei do Salgado</title>
+  <link rel="stylesheet" type="text/css" href="../style/Formatações.css" />
+</head>
+
+<body>
+  <nav id="menu">
+    <ul>
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="Sobre_nos.html">Sobre nós</a></li>
+      <li><a href="cardapio.html">Cardapio</a></li>
+      <li><a href="formulario.html">Cadastre-se</a></li>
+      <!--para adicionar um subgrupo 
+      < ol>
+            li coxinhas li
+           li churros li 
+        < ol >-->
+
+    </ul>
+  </nav>
+
+  <form action="processar_formulario.php" method="POST">
+    <h1 id="form">Formulário</h1>
+    <!-- Campo de Texto -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <!-- Campo de E-mail -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Campo de Telefone -->
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+
+    <!-- Campo de Senha -->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <!-- Campo de Data de Nascimento -->
+    <label for="data_nascimento">Data de Nascimento:</label>
+    <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+    <!-- Campo de Seleção -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+      <option value="brasil">Brasil</option>
+      <option value="eua">Estados Unidos</option>
+      <option value="canada">Canadá</option>
+    </select>
+
+    <!-- Campo de Textarea -->
+    <label for="mensagem">Qual seu salgado favorito?</label>
+    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+    <!-- Campo de Radio -->
+    <label for="pais">Genero:</label>
+    <select id="Genero" name="Genero">
+      <option value="homem">Homem</option>
+      <option value="mulher">Mulher</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <!-- Campo de Checkbox -->
+
+    <!-- Botão de Envio -->
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
