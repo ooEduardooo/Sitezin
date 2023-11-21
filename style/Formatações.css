@@ -237,6 +237,10 @@ footer {
 }
 
 @media (min-width: 1024px) {
+
+    #menu a {
+        font-size: 2em;
+    }
   
 
     #inicio {
