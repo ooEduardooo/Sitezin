@@ -1,13 +1,18 @@
 @charset "utf-8";
 
+
+
 body {
     background-color: black;
 }
 
+hr {
+    width: 60%;
+}
 
 #inicio {
     color: white;
-    
+
 }
 
 
@@ -17,12 +22,19 @@ body {
     margin-top: -20px;
 }
 
+h1 {
+    font-family: Arial;
+    font-size: 1.3em;
+    /* Tamanho da fonte em unidades flexíveis */
+    color: #ffffff;
+    padding: 1.3em;
+}
+
 h2 {
     font-family: Arial;
     font-size: 1.3em;
     /* Tamanho da fonte em unidades flexíveis */
-    color: white;
-    text-shadow: 2px 2px 2px red;
+    color: #F25C05;
 }
 
 p {
@@ -57,7 +69,7 @@ footer {
     text-align: center;
     display: inline-block;
     /* Alterado para exibição em bloco para dispositivos móveis */
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     /* Espaçamento entre os itens para dispositivos móveis */
     padding: 5px;
 }
@@ -66,8 +78,8 @@ footer {
     text-decoration: none;
     color: white;
     border: 0.1em solid white;
-    padding: 0.2em 0.5em;
-    font-size: 1.2em;
+    padding: 0.2em 0.3em;
+    font-size: 1.065em;
     border-radius: 10px;
     /* Exibir em bloco para ocupar a largura total */
     margin-bottom: 5px;
@@ -123,20 +135,19 @@ footer {
 }
 
 .sobre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
 .fotos img {
-    width: 100%;
+    width: 90%;
     /* Defina a largura desejada da imagem, como 100% para ocupar a largura total do contêiner */
     height: auto;
     /* Mantenha a proporção da imagem */
     margin-bottom: 10px;
+    padding: 5%;
 }
 
 .fotos p {
@@ -144,32 +155,75 @@ footer {
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 11px;
+    font-size: 15px;
 }
+
+#sobreh2 {
+    font-size: 1.3em;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 1em;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 50%;
+    height: auto;
+}
+
+
+
+
 
 /* Estilos para tablets e telas maiores */
 @media (min-width: 768px) {
+    .swiper-slide {
+        font-size: 1em;
+    }
+
+    .swiper-slide img {
+        width: 35%;
+        height: auto;
+    }
+
     #menu a {
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 
     #inicio {
-        font-size: 3em;
+        font-size: 2em;
         left: 14%;
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
     p {
         font-size: 1.3em;
     }
 
+    .sobre {
+        display: flex;
+        align-items: center;
+    }
+
     .imgprn img {
         width: 50%;
         height: auto;
     }
+
 
     .fotos p {
         margin-top: 10px;
@@ -183,10 +237,21 @@ footer {
 }
 
 @media (min-width: 1024px) {
-#inicio {
+  
+
+    #inicio {
         font-size: 3em;
         text-align: center;
         left: 20%;
+    }
+
+    .swiper-slide {
+        font-size: 1em;
+    }
+
+    .swiper-slide img {
+        width: 30%;
+        height: auto;
     }
 
     p {
@@ -196,7 +261,12 @@ footer {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 2.5em;
+    }
+
+    .sobre {
+        display: flex;
+        padding: 100px;
     }
 
     .imgprn img {
@@ -219,7 +289,7 @@ footer {
     }
 
     .fotos img {
-        width: 60%;
+        width: 50%;
         /* Defina a largura desejada da imagem, como 100% para ocupar a largura total do contêiner */
         height: auto;
         /* Mantenha a proporção da imagem */
@@ -235,6 +305,7 @@ footer {
     }
 
 }
+
 /* Estilo do formulário */
 form {
     background-color: rgba(255, 255, 255, 0.8);
