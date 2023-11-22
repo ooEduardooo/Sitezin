@@ -250,11 +250,11 @@ footer {
     }
 
     .swiper-slide {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .swiper-slide img {
-        width: 30%;
+        width: 25%;
         height: auto;
     }
 

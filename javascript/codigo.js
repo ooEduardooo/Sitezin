@@ -38,6 +38,6 @@ if (window.innerWidth < 768) {
     prevButton.style.left = '5%';
   } else {
     // Para telas grandes (ex: desktops)
-    nextButton.style.right = '25%';
-    prevButton.style.left = '25%';
+    nextButton.style.right = '30%';
+    prevButton.style.left = '30%';
   }
