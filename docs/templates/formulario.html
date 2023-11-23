@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario Rei do Salgado</title>
-  <link rel="stylesheet" type="text/css" href="../style/Formatações.css" />
+  <link rel="stylesheet" type="text/css" href="../static/Formatações.css">
 </head>
 
 <body>
@@ -24,7 +24,8 @@
     </ul>
   </nav>
  
-  <form action="processar_formulario.php" method="POST">
+  <form method="POST" action="http://localhost:5000/user/">
+    <!-- Seus campos de formulário aqui -->
     <h1 id="form">Formulário</h1>
     <!-- Campo de Texto -->
     <label for="nome">Nome:</label>
@@ -55,12 +56,13 @@
     </select>
 
     <!-- Campo de Textarea -->
-    <label for="mensagem">Qual seu salgado favorito?</label>
-    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+    <label for="salgado_favorito">Qual seu salgado favorito?</label>
+<textarea id="salgado_favorito" name="salgado_favorito" rows="4"></textarea>
+
 
     <!-- Campo de Radio -->
-    <label for="pais">Genero:</label>
-    <select id="Genero" name="Genero">
+    <label for="genero">Genero:</label>
+    <select id="genero" name="genero">
       <option value="homem">Homem</option>
       <option value="mulher">Mulher</option>
       <option value="outro">Outro</option>
